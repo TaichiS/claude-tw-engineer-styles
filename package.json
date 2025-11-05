@@ -1,0 +1,44 @@
+{
+  "name": "claude-tw-engineer-styles",
+  "version": "1.0.0",
+  "description": "繁體中文工程師輸出風格插件，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師 | Traditional Chinese Engineer Output Styles Plugin for Claude Code with 4 professional coding personalities",
+  "keywords": [
+    "claude-code",
+    "claude-plugin",
+    "traditional-chinese",
+    "zh-TW",
+    "output-style",
+    "engineer",
+    "personality",
+    "taiwan",
+    "繁體中文"
+  ],
+  "author": {
+    "name": "Lung Hung Lin",
+    "url": "https://github.com/Loongwoo"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Loongwoo/claude-tw-engineer-styles#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loongwoo/claude-tw-engineer-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Loongwoo/claude-tw-engineer-styles/issues"
+  },
+  "files": [
+    ".claude-plugin",
+    "hooks",
+    "hooks-handlers",
+    "styles",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "claude-code": ">=2.0.30"
+  },
+  "scripts": {
+    "install-plugin": "mkdir -p ~/.claude/plugins && cp -r . ~/.claude/plugins/claude-tw-engineer-styles",
+    "uninstall-plugin": "rm -rf ~/.claude/plugins/claude-tw-engineer-styles"
+  }
+}
