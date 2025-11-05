@@ -1,0 +1,37 @@
+{
+  "name": "claude-tw-engineer-styles",
+  "owner": {
+    "name": "Lung Hung Lin",
+    "email": "taichis@github"
+  },
+  "metadata": {
+    "description": "繁體中文工程師輸出風格插件市場，提供四種專業程式設計師人格 (Traditional Chinese Engineer Output Styles)",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-tw-engineer-styles",
+      "source": ".",
+      "description": "繁體中文工程師輸出風格插件，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師",
+      "version": "1.0.0",
+      "author": {
+        "name": "Lung Hung Lin",
+        "url": "https://github.com/TaichiS"
+      },
+      "homepage": "https://github.com/TaichiS/claude-tw-engineer-styles",
+      "repository": "https://github.com/TaichiS/claude-tw-engineer-styles",
+      "license": "MIT",
+      "keywords": [
+        "traditional-chinese",
+        "zh-TW",
+        "output-style",
+        "engineer",
+        "personality",
+        "taiwan",
+        "繁體中文"
+      ],
+      "category": "output-styles",
+      "tags": ["chinese", "personality", "styles"]
+    }
+  ]
+}

@@ -65,32 +65,37 @@
 
 ### 🚀 安裝方法
 
-#### 方法一：手動安裝（推薦）
+#### 方法一：從 GitHub 安裝（推薦給一般用戶）
+
+在 Claude Code 內部執行以下命令：
+
+```
+/plugin marketplace add TaichiS/claude-tw-engineer-styles
+```
+
+然後安裝插件：
+
+```
+/plugin install claude-tw-engineer-styles@claude-tw-engineer-styles
+```
+
+**重啟 Claude Code** 使插件生效
+
+#### 方法二：手動安裝（開發者/本地測試）
 
 1. **下載插件：**
    ```bash
    git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
+   cd claude-tw-engineer-styles
    ```
 
-2. **安裝到 Claude Code：**
+2. **創建符號連結：**
    ```bash
-   # 移動到 Claude 插件目錄
    mkdir -p ~/.claude/plugins
-   cp -r claude-tw-engineer-styles ~/.claude/plugins/
+   ln -s "$(pwd)" ~/.claude/plugins/claude-tw-engineer-styles
    ```
 
 3. **重啟 Claude Code** 使插件生效
-
-#### 方法二：符號連結（開發者推薦）
-
-```bash
-# 克隆專案
-git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
-
-# 創建符號連結
-mkdir -p ~/.claude/plugins
-ln -s "$(pwd)/claude-tw-engineer-styles" ~/.claude/plugins/
-```
 
 ### ⚙️ 配置方法
 
@@ -185,7 +190,8 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
 ```
 claude-tw-engineer-styles/
 ├── .claude-plugin/
-│   └── plugin.json              # 插件元資料
+│   ├── plugin.json              # 插件元資料
+│   └── marketplace.json         # Marketplace 配置（支援 GitHub 安裝）
 ├── hooks/
 │   └── hooks.json              # Hook 配置
 ├── hooks-handlers/
@@ -265,28 +271,34 @@ A Traditional Chinese output style plugin for Claude Code, featuring four unique
 
 ### 🚀 Installation
 
-#### Method 1: Manual Installation (Recommended)
+#### Method 1: Install from GitHub (Recommended)
 
-```bash
-# Clone the repository
-git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
+Run the following command inside Claude Code:
 
-# Install to Claude Code plugins directory
-mkdir -p ~/.claude/plugins
-cp -r claude-tw-engineer-styles ~/.claude/plugins/
-
-# Restart Claude Code
+```
+/plugin marketplace add TaichiS/claude-tw-engineer-styles
 ```
 
-#### Method 2: Symbolic Link (Developer Recommended)
+Then install the plugin:
+
+```
+/plugin install claude-tw-engineer-styles@claude-tw-engineer-styles
+```
+
+**Restart Claude Code** to activate the plugin
+
+#### Method 2: Manual Installation (For Developers/Local Testing)
 
 ```bash
 # Clone the repository
 git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
+cd claude-tw-engineer-styles
 
 # Create symbolic link
 mkdir -p ~/.claude/plugins
-ln -s "$(pwd)/claude-tw-engineer-styles" ~/.claude/plugins/
+ln -s "$(pwd)" ~/.claude/plugins/claude-tw-engineer-styles
+
+# Restart Claude Code
 ```
 
 ### ⚙️ Configuration
