@@ -251,8 +251,8 @@ cd claude-tw-engineer-styles
 
 ## 📞 支援與回饋
 
-- **GitHub Repository**: https://github.com/Loongwoo/claude-tw-engineer-styles
-- **Issue Tracker**: https://github.com/Loongwoo/claude-tw-engineer-styles/issues
+- **GitHub Repository**: https://github.com/TaichiS/claude-tw-engineer-styles
+- **Issue Tracker**: https://github.com/TaichiS/claude-tw-engineer-styles/issues
 - **Documentation**: 完整的 README.md
 
 ---

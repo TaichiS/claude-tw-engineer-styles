@@ -14,7 +14,7 @@
 
 ```bash
 # 1. Clone 專案
-git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
 cd claude-tw-engineer-styles
 
 # 2. 預覽可用風格
@@ -330,7 +330,7 @@ cd claude-tw-engineer-styles
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
 cd claude-tw-engineer-styles
 
 # 2. Preview styles
@@ -370,8 +370,8 @@ Want to add your own examples? PRs welcome!
 ## 💡 需要幫助？ | Need Help?
 
 - [FAQ](FAQ.md) - 常見問題解答
-- [GitHub Issues](https://github.com/Loongwoo/claude-tw-engineer-styles/issues) - 報告問題
-- [GitHub Discussions](https://github.com/Loongwoo/claude-tw-engineer-styles/discussions) - 討論交流
+- [GitHub Issues](https://github.com/TaichiS/claude-tw-engineer-styles/issues) - 報告問題
+- [GitHub Discussions](https://github.com/TaichiS/claude-tw-engineer-styles/discussions) - 討論交流
 
 ---
 

@@ -23,7 +23,7 @@
 
 如果您發現了 Bug，請：
 
-1. 前往 [Issues 頁面](https://github.com/Loongwoo/claude-tw-engineer-styles/issues)
+1. 前往 [Issues 頁面](https://github.com/TaichiS/claude-tw-engineer-styles/issues)
 2. 點擊 "New Issue"
 3. 使用以下模板：
 
@@ -55,7 +55,7 @@
 
 想要新功能？請：
 
-1. 先檢查 [Issues](https://github.com/Loongwoo/claude-tw-engineer-styles/issues) 是否已有類似建議
+1. 先檢查 [Issues](https://github.com/TaichiS/claude-tw-engineer-styles/issues) 是否已有類似建議
 2. 如果沒有，創建新 Issue 並使用 "enhancement" 標籤
 3. 詳細描述您的想法和使用場景
 
@@ -277,7 +277,7 @@ We welcome the following types of contributions:
 
 If you find a bug:
 
-1. Go to [Issues page](https://github.com/Loongwoo/claude-tw-engineer-styles/issues)
+1. Go to [Issues page](https://github.com/TaichiS/claude-tw-engineer-styles/issues)
 2. Click "New Issue"
 3. Use the template format shown above
 
@@ -327,8 +327,8 @@ Thank you to all contributors for making this project better!
 
 ## 📞 聯繫 | Contact
 
-- GitHub Issues: [Report a problem](https://github.com/Loongwoo/claude-tw-engineer-styles/issues)
-- GitHub Discussions: [Join the conversation](https://github.com/Loongwoo/claude-tw-engineer-styles/discussions)
+- GitHub Issues: [Report a problem](https://github.com/TaichiS/claude-tw-engineer-styles/issues)
+- GitHub Discussions: [Join the conversation](https://github.com/TaichiS/claude-tw-engineer-styles/discussions)
 
 ---
 

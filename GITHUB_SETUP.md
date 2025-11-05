@@ -37,7 +37,7 @@ git commit -m "feat: initial release of Claude TW Engineer Styles Plugin v1.0.0
 
 ```bash
 # 添加遠端儲存庫（替換成您的 GitHub 用戶名）
-git remote add origin https://github.com/Loongwoo/claude-tw-engineer-styles.git
+git remote add origin https://github.com/TaichiS/claude-tw-engineer-styles.git
 
 # 重命名分支為 main
 git branch -M main
@@ -88,7 +88,7 @@ git push -u origin main
 
 ```bash
 # Clone the repository
-git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
 cd claude-tw-engineer-styles
 
 # Run the installer
@@ -173,7 +173,7 @@ gh release create v1.0.0 \
 
 4. **Website** 設定為：
    ```
-   https://github.com/Loongwoo/claude-tw-engineer-styles
+   https://github.com/TaichiS/claude-tw-engineer-styles
    ```
 
 ## 步驟 6: 添加 README Badges
@@ -182,7 +182,7 @@ gh release create v1.0.0 \
 
 ```markdown
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Loongwoo/claude-tw-engineer-styles)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.0.30%2B-purple.svg)](https://claude.com/code)
 [![Language](https://img.shields.io/badge/Language-繁體中文-green.svg)](README.md)
 ```
@@ -250,11 +250,11 @@ cat > index.html << 'EOF'
     </div>
 
     <h2>快速開始</h2>
-    <pre><code>git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+    <pre><code>git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
 cd claude-tw-engineer-styles
 ./install.sh</code></pre>
 
-    <p><a href="https://github.com/Loongwoo/claude-tw-engineer-styles">📚 查看完整文檔</a></p>
+    <p><a href="https://github.com/TaichiS/claude-tw-engineer-styles">📚 查看完整文檔</a></p>
 </body>
 </html>
 EOF
@@ -297,7 +297,7 @@ git checkout main
 - 📚 雙語文檔
 - 🎯 符合 Claude Code v2.0.30+ 規範
 
-GitHub: https://github.com/Loongwoo/claude-tw-engineer-styles
+GitHub: https://github.com/TaichiS/claude-tw-engineer-styles
 
 #ClaudeCode #Taiwan #繁體中文 #AI #Programming
 ```

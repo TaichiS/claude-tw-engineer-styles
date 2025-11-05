@@ -278,7 +278,7 @@ Plugin 是 Claude Code 官方推薦的方式來擴展功能。
 <details>
 <summary><strong>Q: 可以提議新功能嗎？</strong></summary>
 
-當然可以！請在 [GitHub Issues](https://github.com/Loongwoo/claude-tw-engineer-styles/issues) 創建功能請求。
+當然可以！請在 [GitHub Issues](https://github.com/TaichiS/claude-tw-engineer-styles/issues) 創建功能請求。
 
 請包含：
 - 功能描述
@@ -395,8 +395,8 @@ Only the communication style and personality differ, not the code quality or pro
 
 ## 💬 還有其他問題？ | More Questions?
 
-- [GitHub Issues](https://github.com/Loongwoo/claude-tw-engineer-styles/issues)
-- [GitHub Discussions](https://github.com/Loongwoo/claude-tw-engineer-styles/discussions)
+- [GitHub Issues](https://github.com/TaichiS/claude-tw-engineer-styles/issues)
+- [GitHub Discussions](https://github.com/TaichiS/claude-tw-engineer-styles/discussions)
 
 ---
 

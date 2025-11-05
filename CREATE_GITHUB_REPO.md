@@ -67,7 +67,7 @@ gh repo create claude-tw-engineer-styles \
 gh auth login
 
 # 創建儲存庫
-gh repo create Loongwoo/claude-tw-engineer-styles \
+gh repo create TaichiS/claude-tw-engineer-styles \
   --public \
   --description="繁體中文工程師輸出風格插件 | Traditional Chinese Engineer Output Styles Plugin for Claude Code"
 
@@ -89,14 +89,14 @@ Delta compression using up to 8 threads
 Compressing objects: 100% (17/17), done.
 Writing objects: 100% (21/21), 25.34 KiB | 4.22 MiB/s, done.
 Total 21 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/Loongwoo/claude-tw-engineer-styles.git
+To https://github.com/TaichiS/claude-tw-engineer-styles.git
  * [new branch]      main -> main
 分支 'main' 設定為追蹤來自 'origin' 的遠端分支 'main'。
 ```
 
 然後您可以訪問：
 ```
-https://github.com/Loongwoo/claude-tw-engineer-styles
+https://github.com/TaichiS/claude-tw-engineer-styles
 ```
 
 查看您的新儲存庫！

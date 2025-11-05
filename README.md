@@ -1,7 +1,7 @@
 # 繁體中文工程師輸出風格插件 | Claude TW Engineer Styles Plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/Loongwoo/claude-tw-engineer-styles)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
 
 > 為 Claude Code 提供四種專業的繁體中文工程師人格輸出風格，讓您的 AI 編程助手更具個性和專業性！
 
@@ -69,7 +69,7 @@
 
 1. **下載插件：**
    ```bash
-   git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+   git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
    ```
 
 2. **安裝到 Claude Code：**
@@ -85,7 +85,7 @@
 
 ```bash
 # 克隆專案
-git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
 
 # 創建符號連結
 mkdir -p ~/.claude/plugins
@@ -224,8 +224,8 @@ claude-tw-engineer-styles/
 
 ### 📧 聯繫方式
 
-- GitHub: [@Loongwoo](https://github.com/Loongwoo)
-- 問題回報：[GitHub Issues](https://github.com/Loongwoo/claude-tw-engineer-styles/issues)
+- GitHub: [@TaichiS](https://github.com/TaichiS)
+- 問題回報：[GitHub Issues](https://github.com/TaichiS/claude-tw-engineer-styles/issues)
 
 ---
 
@@ -269,7 +269,7 @@ A Traditional Chinese output style plugin for Claude Code, featuring four unique
 
 ```bash
 # Clone the repository
-git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
 
 # Install to Claude Code plugins directory
 mkdir -p ~/.claude/plugins
@@ -282,7 +282,7 @@ cp -r claude-tw-engineer-styles ~/.claude/plugins/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Loongwoo/claude-tw-engineer-styles.git
+git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
 
 # Create symbolic link
 mkdir -p ~/.claude/plugins

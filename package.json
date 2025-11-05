@@ -15,16 +15,16 @@
   ],
   "author": {
     "name": "Lung Hung Lin",
-    "url": "https://github.com/Loongwoo"
+    "url": "https://github.com/TaichiS"
   },
   "license": "MIT",
-  "homepage": "https://github.com/Loongwoo/claude-tw-engineer-styles#readme",
+  "homepage": "https://github.com/TaichiS/claude-tw-engineer-styles#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Loongwoo/claude-tw-engineer-styles.git"
+    "url": "git+https://github.com/TaichiS/claude-tw-engineer-styles.git"
   },
   "bugs": {
-    "url": "https://github.com/Loongwoo/claude-tw-engineer-styles/issues"
+    "url": "https://github.com/TaichiS/claude-tw-engineer-styles/issues"
   },
   "files": [
     ".claude-plugin",
