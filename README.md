@@ -1,7 +1,7 @@
 # 繁體中文工程師輸出風格插件 | Claude TW Engineer Styles Plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
+[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
 [![Token Savings](https://img.shields.io/badge/Token_Savings-0_when_unused-green.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
 
 > 為 Claude Code 提供四種專業的繁體中文工程師人格輸出風格，讓您的 AI 編程助手更具個性和專業性！
@@ -14,11 +14,55 @@
 
 ### 📋 專案簡介
 
-本插件是專為 Claude Code 設計的繁體中文輸出風格插件，提供四種獨特的工程師人格風格。每種風格都嚴格遵循 SOLID、KISS、DRY、YAGNI 等軟體工程最佳實踐原則，讓您在享受個性化體驗的同時，獲得高品質的程式碼協助。
+本插件是專為 Claude Code 設計的繁體中文輸出風格插件，提供**七種**獨特的工程師人格風格。每種風格都嚴格遵循 SOLID、KISS、DRY、YAGNI 等軟體工程最佳實踐原則，讓您在享受個性化體驗的同時，獲得高品質的程式碼協助。
 
 **⚠️ 重要說明：** 本插件專為 **Claude Code v2.0.30+** 設計，適配 2025 年 11 月 5 日後 Claude Code 將 Output Styles 遷移至 Plugin 架構的更新。
 
-### ✨ 四種風格介紹
+### ✨ 風格介紹
+
+#### 🎭 充滿台灣味的趣味風格（新推出！）
+
+這三種風格特別為台灣開發者設計，充滿人味與趣味，讓寫程式變得更有樂趣！
+
+##### 🎬 周星馳無厘頭工程師
+**適合對象：** 喜歡無厘頭幽默、港片經典對白的開發者
+
+- 🎬 **特點：** 經典港片無厘頭對白風格
+- 😄 **風格：** 技術正經，表達搞笑
+- 🎯 **特色：** 用電影台詞類比技術概念
+- ⚡ **命令：** `/tw-style-stephen-chow`
+
+**典型語句：**
+> "曾經有一份沒有 bug 的代碼擺在我面前，我沒有珍惜..."
+> "你以為加個 try-catch 就能躲過這個 bug？Too young, too simple！"
+
+##### 💕 甜蜜女友工程師
+**適合對象：** 想要溫柔鼓勵、需要情感支持的開發者
+
+- 💕 **特點：** 溫柔體貼，稱呼「寶貝」
+- 😊 **風格：** 鼓勵式教學，永遠支持
+- 🌸 **特色：** 專業但充滿溫暖
+- ⚡ **命令：** `/tw-style-sweet-girlfriend`
+
+**典型語句：**
+> "寶貝，讓我來幫你處理這個問題好嗎？(*´∀`*)"
+> "寶貝你真棒！這個想法很好喔～"
+
+##### 🏪 台灣夜市老闆工程師
+**適合對象：** 喜歡接地氣、充滿台灣味的開發者
+
+- 🏪 **特點：** 超熱情、很接地氣
+- 🗣️ **風格：** 台灣國語 + 偶爾台語
+- 💪 **特色：** 實在、講究俗擱大碗（CP 值超高）
+- ⚡ **命令：** `/tw-style-night-market`
+
+**典型語句：**
+> "欸少年仔，這個 API 設計啊，要做就要做好做滿啦！"
+> "你看這個架構，俗擱大碗！功能多、效能好、維護容易～"
+
+---
+
+#### 🎨 經典動漫風格
 
 #### 1️⃣ 專業工程師 (engineer-professional)
 **適合對象：** 追求嚴謹、專業的開發者
@@ -106,6 +150,14 @@
 
 在 Claude Code 對話中執行以下 slash command 啟用風格：
 
+**台灣味趣味風格（推薦）：**
+```
+/tw-style-stephen-chow      # 啟用周星馳無厘頭工程師
+/tw-style-sweet-girlfriend  # 啟用甜蜜女友工程師
+/tw-style-night-market      # 啟用台灣夜市老闆工程師
+```
+
+**經典動漫風格：**
 ```
 /tw-style-professional   # 啟用專業工程師風格
 /tw-style-laowang       # 啟用老王技術流風格

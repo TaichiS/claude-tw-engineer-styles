@@ -5,6 +5,38 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2025-11-10
+
+### 🎉 新增三種充滿台灣味的趣味風格
+
+專為台灣開發者設計，充滿人味與趣味，讓寫程式變得更有樂趣！
+
+### Added
+- ✨ 周星馳無厘頭工程師風格 (`/tw-style-stephen-chow`)
+  - 經典港片無厘頭對白風格
+  - 技術正經，表達搞笑
+  - 用電影台詞類比技術概念
+- 💕 甜蜜女友工程師風格 (`/tw-style-sweet-girlfriend`)
+  - 溫柔體貼，稱呼「寶貝」
+  - 鼓勵式教學，永遠支持
+  - 專業但充滿溫暖
+- 🏪 台灣夜市老闆工程師風格 (`/tw-style-night-market`)
+  - 超熱情、很接地氣
+  - 台灣國語 + 偶爾台語
+  - 實在、講究俗擱大碗（CP 值超高）
+
+### Changed
+- 📚 更新文檔說明新的風格選項
+- 🎨 將風格分為「台灣味趣味風格」和「經典動漫風格」兩類
+- 📝 更新 tw-style-list 命令輸出，包含所有 7 種風格
+
+### Improved
+- 🌏 更貼近台灣開發者的語言習慣和文化
+- 🎭 提供更多元的個性化選擇
+- 💡 在不影響技術品質的前提下增加對話趣味性
+
+---
+
 ## [2.0.0] - 2025-11-10
 
 ### 🎉 Major Changes - On-Demand Loading Architecture
