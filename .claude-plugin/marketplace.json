@@ -5,15 +5,15 @@
     "email": "taichis@github"
   },
   "metadata": {
-    "description": "繁體中文工程師輸出風格插件市場，提供四種專業程式設計師人格 (Traditional Chinese Engineer Output Styles)",
-    "version": "1.0.0"
+    "description": "繁體中文工程師輸出風格插件市場，提供四種專業程式設計師人格。v2.0 按需加載，節省 token！(Traditional Chinese Engineer Output Styles - v2.0 On-Demand Loading)",
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "claude-tw-engineer-styles",
       "source": "./",
-      "description": "繁體中文工程師輸出風格插件，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師",
-      "version": "1.0.0",
+      "description": "繁體中文工程師輸出風格插件，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師。v2.0 採用 slash commands 按需加載，不使用時 0 token 佔用！",
+      "version": "2.0.0",
       "author": {
         "name": "Lung Hung Lin",
         "url": "https://github.com/TaichiS"
@@ -28,10 +28,13 @@
         "engineer",
         "personality",
         "taiwan",
-        "繁體中文"
+        "繁體中文",
+        "slash-commands",
+        "on-demand",
+        "token-saving"
       ],
       "category": "output-styles",
-      "tags": ["chinese", "personality", "styles"]
+      "tags": ["chinese", "personality", "styles", "slash-commands"]
     }
   ]
 }

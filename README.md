@@ -1,7 +1,8 @@
 # 繁體中文工程師輸出風格插件 | Claude TW Engineer Styles Plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
+[![Token Savings](https://img.shields.io/badge/Token_Savings-0_when_unused-green.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
 
 > 為 Claude Code 提供四種專業的繁體中文工程師人格輸出風格，讓您的 AI 編程助手更具個性和專業性！
 
@@ -97,25 +98,45 @@
 
 3. **重啟 Claude Code** 使插件生效
 
-### ⚙️ 配置方法
+### ⚙️ 使用方法
 
-#### 1. 選擇您喜歡的輸出風格
+#### ✨ 按需啟用風格（推薦）
 
-編輯 Claude Code 的設定檔：`~/.claude/settings.json`
+本插件採用 **按需加載設計**，只有在您需要時才注入風格描述，**不使用時完全不佔用 token**！
 
-```json
-{
-  "outputStyle": "engineer-professional"
-}
+在 Claude Code 對話中執行以下 slash command 啟用風格：
+
+```
+/tw-style-professional   # 啟用專業工程師風格
+/tw-style-laowang       # 啟用老王技術流風格
+/tw-style-nekomata      # 啟用貓娘工程師風格
+/tw-style-ojousama      # 啟用傲嬌大小姐工程師風格
 ```
 
-**可用值：**
-- `engineer-professional` - 專業工程師
-- `laowang-engineer` - 老王技術流
-- `nekomata-engineer` - 貓娘工程師
-- `ojousama-engineer` - 傲嬌大小姐工程師
+#### 查看所有可用風格
 
-#### 2. 驗證插件安裝
+```
+/tw-style-list          # 列出所有風格的詳細說明
+```
+
+#### 關閉風格
+
+```
+/tw-style-off           # 關閉風格，恢復預設行為
+```
+
+#### 💡 Token 節省優勢
+
+| 使用方式 | 不使用時 Token | 使用時 Token |
+|---------|--------------|------------|
+| **舊版自動注入** | ~2000-3000 | ~2000-3000 |
+| **新版按需加載** | **0** ✨ | ~2000-3000 |
+
+**結論：** 新版設計讓您完全掌控何時啟用風格，大幅節省 token 消耗！
+
+### 🛠️ 進階使用
+
+#### 驗證插件安裝
 
 ```bash
 # 檢查插件目錄
@@ -123,84 +144,100 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
 
 # 應該看到以下結構：
 # .claude-plugin/
+#   ├── commands/        # Slash commands
+#   └── plugin.json
 # hooks/
-# hooks-handlers/
 # styles/
 ```
 
-#### 3. 測試插件
+#### 測試插件
 
-啟動 Claude Code 並嘗試一個簡單的請求：
-
-```
-幫我寫一個 Hello World 程式
-```
-
-您應該會看到選擇的風格特色回應！
-
-### 🛠️ 進階使用
-
-#### 動態切換風格
-
-您可以隨時修改 `~/.claude/settings.json` 中的 `outputStyle` 值來切換風格，然後重啟 Claude Code 即可。
+1. 啟動 Claude Code
+2. 執行 `/tw-style-list` 查看可用風格
+3. 執行 `/tw-style-nekomata` 啟用貓娘工程師風格
+4. 嘗試請求：「幫我寫一個 Hello World 程式」
+5. 您應該會看到貓娘風格的回應！喵～ (*^▽^*)
 
 #### 自訂風格
 
 如果您想創建自己的輸出風格：
 
-1. 在 `styles/` 目錄中創建新的 `.md` 檔案
-2. 參考現有風格的格式編寫
-3. 在 `hooks-handlers/session-start.sh` 中添加您的風格到 `SUPPORTED_STYLES` 陣列
+1. 在 `.claude-plugin/commands/` 目錄中創建新的 `.md` 檔案
+2. 參考現有風格命令的格式編寫
+3. 檔案名格式：`tw-style-yourname.md`
+4. 添加 frontmatter 描述：
+   ```markdown
+   ---
+   description: 您的風格描述
+   ---
+
+   # 您的風格內容
+   ```
 
 ### 🔧 故障排除
 
-#### 插件沒有生效
+#### Slash Command 無法使用
 
 1. **檢查插件目錄位置：**
    ```bash
-   ls -la ~/.claude/plugins/claude-tw-engineer-styles
+   ls -la ~/.claude/plugins/claude-tw-engineer-styles/.claude-plugin/commands/
    ```
+   確認 commands 目錄存在且包含 `.md` 檔案
 
-2. **檢查腳本執行權限：**
-   ```bash
-   chmod +x ~/.claude/plugins/claude-tw-engineer-styles/hooks-handlers/session-start.sh
-   ```
-
-3. **檢查 Claude Code 版本：**
+2. **檢查 Claude Code 版本：**
    確保使用 Claude Code v2.0.30 或更高版本
+
+3. **重新安裝插件：**
+   ```bash
+   # 移除舊版本
+   rm -rf ~/.claude/plugins/claude-tw-engineer-styles
+
+   # 重新安裝
+   /plugin marketplace add TaichiS/claude-tw-engineer-styles
+   /plugin install claude-tw-engineer-styles@claude-tw-engineer-styles
+   ```
 
 4. **查看除錯訊息：**
    ```bash
    claude --debug
    ```
 
-#### 風格沒有變化
+#### 風格沒有生效
 
-1. **確認 settings.json 配置正確：**
-   ```bash
-   cat ~/.claude/settings.json | grep outputStyle
-   ```
+1. **確認已執行 slash command：**
+   - 在對話中輸入 `/tw-style-list` 確認命令可用
+   - 執行對應的風格命令，例如 `/tw-style-nekomata`
 
-2. **重啟 Claude Code**
+2. **檢查命令是否正確執行：**
+   - 執行命令後應該會看到風格說明文字
+   - 如果沒有看到，可能是命令未正確執行
 
-3. **檢查風格名稱拼寫是否正確**
+3. **嘗試其他風格：**
+   - 執行 `/tw-style-professional` 測試其他風格是否正常
 
 ### 📁 專案結構
 
 ```
 claude-tw-engineer-styles/
 ├── .claude-plugin/
-│   ├── plugin.json              # 插件元資料
-│   └── marketplace.json         # Marketplace 配置（支援 GitHub 安裝）
+│   ├── commands/                      # Slash commands（新）
+│   │   ├── tw-style-professional.md  # 專業工程師風格命令
+│   │   ├── tw-style-laowang.md       # 老王技術流風格命令
+│   │   ├── tw-style-nekomata.md      # 貓娘工程師風格命令
+│   │   ├── tw-style-ojousama.md      # 傲嬌大小姐工程師風格命令
+│   │   ├── tw-style-list.md          # 列出所有風格
+│   │   └── tw-style-off.md           # 關閉風格
+│   ├── plugin.json                    # 插件元資料
+│   └── marketplace.json               # Marketplace 配置
 ├── hooks/
-│   └── hooks.json              # Hook 配置
+│   └── hooks.json                     # Hook 配置（已清空）
 ├── hooks-handlers/
-│   └── session-start.sh        # SessionStart hook 處理器
+│   └── session-start.sh               # 舊版處理器（已棄用）
 ├── styles/
-│   ├── engineer-professional.md   # 專業工程師風格
-│   ├── laowang-engineer.md        # 老王技術流風格
-│   ├── nekomata-engineer.md       # 貓娘工程師風格
-│   └── ojousama-engineer.md       # 傲嬌大小姐工程師風格
+│   ├── engineer-professional.md       # 專業工程師風格定義
+│   ├── laowang-engineer.md            # 老王技術流風格定義
+│   ├── nekomata-engineer.md           # 貓娘工程師風格定義
+│   └── ojousama-engineer.md           # 傲嬌大小姐工程師風格定義
 ├── README.md
 ├── LICENSE
 └── package.json
@@ -301,42 +338,81 @@ ln -s "$(pwd)" ~/.claude/plugins/claude-tw-engineer-styles
 # Restart Claude Code
 ```
 
-### ⚙️ Configuration
+### ⚙️ Usage
 
-Edit `~/.claude/settings.json`:
+#### ✨ On-Demand Style Activation (Recommended)
 
-```json
-{
-  "outputStyle": "engineer-professional"
-}
+This plugin uses an **on-demand loading design**, injecting style descriptions only when you need them. **0 token usage when not in use**!
+
+Run these slash commands in Claude Code to activate styles:
+
+```
+/tw-style-professional   # Activate Professional Engineer style
+/tw-style-laowang       # Activate Laowang Tech Flow style
+/tw-style-nekomata      # Activate Nekomata Engineer style
+/tw-style-ojousama      # Activate Ojousama Engineer style
 ```
 
-**Available values:**
-- `engineer-professional` - Professional Engineer
-- `laowang-engineer` - Laowang Tech Flow
-- `nekomata-engineer` - Nekomata Engineer
-- `ojousama-engineer` - Ojousama Engineer
+#### List All Available Styles
+
+```
+/tw-style-list          # Show detailed descriptions of all styles
+```
+
+#### Deactivate Style
+
+```
+/tw-style-off           # Deactivate style, return to default behavior
+```
+
+#### 💡 Token Savings Advantage
+
+| Usage Method | Tokens When Not Used | Tokens When Used |
+|-------------|---------------------|-----------------|
+| **Old Auto-Injection** | ~2000-3000 | ~2000-3000 |
+| **New On-Demand Loading** | **0** ✨ | ~2000-3000 |
+
+**Conclusion:** The new design gives you full control over when to activate styles, significantly reducing token consumption!
 
 ### 🛠️ Troubleshooting
 
-#### Plugin Not Working
+#### Slash Commands Not Working
 
 1. Check plugin directory:
    ```bash
-   ls -la ~/.claude/plugins/claude-tw-engineer-styles
+   ls -la ~/.claude/plugins/claude-tw-engineer-styles/.claude-plugin/commands/
    ```
+   Confirm the commands directory exists with `.md` files
 
-2. Check script permissions:
+2. Verify Claude Code version (v2.0.30+)
+
+3. Reinstall plugin:
    ```bash
-   chmod +x ~/.claude/plugins/claude-tw-engineer-styles/hooks-handlers/session-start.sh
-   ```
+   # Remove old version
+   rm -rf ~/.claude/plugins/claude-tw-engineer-styles
 
-3. Verify Claude Code version (v2.0.30+)
+   # Reinstall
+   /plugin marketplace add TaichiS/claude-tw-engineer-styles
+   /plugin install claude-tw-engineer-styles@claude-tw-engineer-styles
+   ```
 
 4. Check debug output:
    ```bash
    claude --debug
    ```
+
+#### Style Not Taking Effect
+
+1. **Confirm slash command was executed:**
+   - Type `/tw-style-list` in the conversation to confirm commands are available
+   - Execute the corresponding style command, e.g., `/tw-style-nekomata`
+
+2. **Check if command executed correctly:**
+   - After executing the command, you should see style description text
+   - If not visible, the command may not have executed properly
+
+3. **Try other styles:**
+   - Execute `/tw-style-professional` to test if other styles work
 
 ### 📄 License
 

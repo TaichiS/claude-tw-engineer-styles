@@ -1,7 +1,7 @@
 {
   "name": "claude-tw-engineer-styles",
-  "version": "1.0.0",
-  "description": "繁體中文工程師輸出風格插件，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師 (Traditional Chinese Engineer Output Styles Plugin with 4 professional coding personalities)",
+  "version": "2.0.0",
+  "description": "繁體中文工程師輸出風格插件，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師。v2.0 採用按需加載設計，節省 token！(Traditional Chinese Engineer Output Styles Plugin with 4 professional coding personalities. v2.0 uses on-demand loading to save tokens!)",
   "author": {
     "name": "Lung Hung Lin",
     "url": "https://github.com/TaichiS"
@@ -16,7 +16,9 @@
     "engineer",
     "personality",
     "taiwan",
-    "繁體中文"
+    "繁體中文",
+    "slash-commands",
+    "on-demand"
   ],
   "hooks": "./hooks/hooks.json"
 }
