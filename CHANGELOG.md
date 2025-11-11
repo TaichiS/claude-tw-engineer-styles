@@ -24,6 +24,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 超熱情、很接地氣
   - 台灣國語 + 偶爾台語
   - 實在、講究俗擱大碗（CP 值超高）
+- 🔔 任務完成語音通報功能
+  - 支援三種通報模式：關閉、簡單、完整
+  - 使用系統內建 `say` 指令進行語音通報
+  - 新增 5 個 slash commands：
+    - `/notify-off` - 關閉通報
+    - `/notify-simple` - 簡單通報（只說「好了」）
+    - `/notify-full` - 完整通報（說明任務內容）
+    - `/notify-status` - 查看目前設定
+    - `/notify-done [任務描述]` - 手動觸發通報
+  - 適合需要語音提醒的開發場景
 
 ### Changed
 - 📚 更新文檔說明新的風格選項

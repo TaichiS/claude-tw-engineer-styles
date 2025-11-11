@@ -226,6 +226,81 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
    # 您的風格內容
    ```
 
+### 🔔 任務完成語音通報（新功能！）
+
+當您完成任務時，可以讓系統用語音通知您！支援三種通報模式：
+
+#### 通報模式
+
+**1. 關閉通報** 🔇
+```bash
+/notify-off
+```
+不會有任何通報。
+
+**2. 簡單通報** 🔔
+```bash
+/notify-simple
+```
+完成任務時，系統會簡單說「好了」。
+
+**3. 完整通報** 🔊
+```bash
+/notify-full
+```
+完成任務時，系統會說明任務內容，例如：「修復登入 bug 的任務，我已經完成了」。
+
+#### 使用方式
+
+1. **先選擇通報模式：**
+   ```bash
+   /notify-full  # 選擇完整通報模式
+   ```
+
+2. **完成任務後觸發通報：**
+   ```bash
+   /notify-done 重構使用者認證模組
+   ```
+   系統會說：「重構使用者認證模組的任務，我已經完成了」
+
+3. **查看目前設定：**
+   ```bash
+   /notify-status
+   ```
+
+#### 系統需求
+
+- **macOS**：內建支援，無需額外設定
+- **Linux**：需要安裝 `espeak` 或 `festival`
+  ```bash
+  # Ubuntu/Debian
+  sudo apt-get install espeak
+
+  # Fedora/RHEL
+  sudo dnf install espeak
+  ```
+- **Windows**：目前不支援
+
+#### 使用範例
+
+```bash
+# 設定為完整通報模式
+/notify-full
+
+# 完成各種任務後的通報
+/notify-done 修復登入 bug
+/notify-done 完成 API 文件撰寫
+/notify-done 部署到生產環境
+
+# 切換為簡單模式
+/notify-simple
+/notify-done 程式碼審查
+→ 系統只會說：「好了」
+
+# 關閉通報
+/notify-off
+```
+
 ### 🔧 故障排除
 
 #### Slash Command 無法使用
