@@ -1,7 +1,7 @@
 {
   "name": "claude-tw-engineer-styles",
   "version": "2.1.0",
-  "description": "繁體中文工程師輸出風格插件，提供七種專業程式設計師人格，包含充滿台灣味的趣味風格！v2.1 新增周星馳、甜蜜女友、夜市老闆風格！(Traditional Chinese Engineer Output Styles Plugin with 7 professional coding personalities. v2.1 adds Stephen Chow, Sweet Girlfriend, and Night Market Boss styles!)",
+  "description": "繁體中文工程師輸出風格外掛，提供七種專業程式設計師人格，包含充滿台灣味的趣味風格！v2.1 新增周星馳、甜蜜女友、夜市老闆風格！(Traditional Chinese Engineer Output Styles Plugin with 7 professional coding personalities. v2.1 adds Stephen Chow, Sweet Girlfriend, and Night Market Boss styles!)",
   "author": {
     "name": "Lung Hung Lin",
     "url": "https://github.com/TaichiS"

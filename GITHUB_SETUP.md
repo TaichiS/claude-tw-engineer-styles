@@ -27,7 +27,7 @@ git commit -m "feat: initial release of Claude TW Engineer Styles Plugin v1.0.0
 2. 儲存庫名稱：`claude-tw-engineer-styles`
 3. 描述：
    ```
-   繁體中文工程師輸出風格插件 | Traditional Chinese Engineer Output Styles Plugin for Claude Code
+   繁體中文工程師輸出風格外掛 | Traditional Chinese Engineer Output Styles Plugin for Claude Code
    ```
 4. 設定為 **Public**
 5. **不要** 初始化 README、.gitignore 或 License（我們已經有了）
@@ -168,7 +168,7 @@ gh release create v1.0.0 \
 
 3. **Description** 更新為：
    ```
-   🇹🇼 繁體中文工程師輸出風格插件 | Traditional Chinese Engineer Output Styles Plugin for Claude Code
+   🇹🇼 繁體中文工程師輸出風格外掛 | Traditional Chinese Engineer Output Styles Plugin for Claude Code
    ```
 
 4. **Website** 設定為：
@@ -225,7 +225,7 @@ cat > index.html << 'EOF'
 </head>
 <body>
     <h1>🇹🇼 Claude TW Engineer Styles Plugin</h1>
-    <p>繁體中文工程師輸出風格插件，為 Claude Code 提供四種專業程式設計師人格。</p>
+    <p>繁體中文工程師輸出風格外掛，為 Claude Code 提供四種專業程式設計師人格。</p>
 
     <h2>四種輸出風格</h2>
 
@@ -284,7 +284,7 @@ git checkout main
 ```markdown
 🎉 Claude TW Engineer Styles Plugin v1.0.0 發布！
 
-為 Claude Code 打造的繁體中文工程師輸出風格插件，提供 4 種獨特的程式設計師人格：
+為 Claude Code 打造的繁體中文工程師輸出風格外掛，提供 4 種獨特的程式設計師人格：
 
 1. 專業工程師 - 嚴謹技術導向
 2. 老王技術流 - 暴躁但專業

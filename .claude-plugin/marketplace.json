@@ -5,14 +5,14 @@
     "email": "taichis@github"
   },
   "metadata": {
-    "description": "繁體中文工程師輸出風格插件市場，提供七種專業程式設計師人格，包含充滿台灣味的趣味風格！v2.1 新增三種風格！(Traditional Chinese Engineer Output Styles - v2.1 with Taiwan-flavored styles)",
+    "description": "繁體中文工程師輸出風格外掛市場，提供七種專業程式設計師人格，包含充滿台灣味的趣味風格！v2.1 新增三種風格！(Traditional Chinese Engineer Output Styles - v2.1 with Taiwan-flavored styles)",
     "version": "2.1.0"
   },
   "plugins": [
     {
       "name": "claude-tw-engineer-styles",
       "source": "./",
-      "description": "繁體中文工程師輸出風格插件，提供七種專業程式設計師人格，包含周星馳無厘頭、甜蜜女友、台灣夜市老闆等充滿人味與趣味的風格！v2.1 採用 slash commands 按需加載，不使用時 0 token 佔用！",
+      "description": "繁體中文工程師輸出風格外掛，提供七種專業程式設計師人格，包含周星馳無厘頭、甜蜜女友、台灣夜市老闆等充滿人味與趣味的風格！v2.1 採用 slash commands 按需加載，不使用時 0 token 佔用！",
       "version": "2.1.0",
       "author": {
         "name": "Lung Hung Lin",

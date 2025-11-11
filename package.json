@@ -1,7 +1,7 @@
 {
   "name": "claude-tw-engineer-styles",
   "version": "2.1.0",
-  "description": "繁體中文工程師輸出風格插件，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師。v2.0 採用按需加載，節省 token！ | Traditional Chinese Engineer Output Styles Plugin for Claude Code with 4 professional coding personalities. v2.0 uses on-demand loading to save tokens!",
+  "description": "繁體中文工程師輸出風格外掛，提供四種專業程式設計師人格：專業工程師、老王技術流、貓娘工程師、傲嬌大小姐工程師。v2.0 採用按需加載，節省 token！ | Traditional Chinese Engineer Output Styles Plugin for Claude Code with 4 professional coding personalities. v2.0 uses on-demand loading to save tokens!",
   "keywords": [
     "claude-code",
     "claude-plugin",

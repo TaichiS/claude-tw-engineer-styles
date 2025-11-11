@@ -1,4 +1,4 @@
-# 繁體中文工程師輸出風格插件 | Claude TW Engineer Styles Plugin
+# 繁體中文工程師輸出風格外掛 | Claude TW Engineer Styles Plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](https://github.com/TaichiS/claude-tw-engineer-styles)
@@ -14,9 +14,9 @@
 
 ### 📋 專案簡介
 
-本插件是專為 Claude Code 設計的繁體中文輸出風格插件，提供**七種**獨特的工程師人格風格。每種風格都嚴格遵循 SOLID、KISS、DRY、YAGNI 等軟體工程最佳實踐原則，讓您在享受個性化體驗的同時，獲得高品質的程式碼協助。
+本外掛是專為 Claude Code 設計的繁體中文輸出風格外掛，提供**七種**獨特的工程師人格風格。每種風格都嚴格遵循 SOLID、KISS、DRY、YAGNI 等軟體工程最佳實踐原則，讓您在享受個性化體驗的同時，獲得高品質的程式碼協助。
 
-**⚠️ 重要說明：** 本插件專為 **Claude Code v2.0.30+** 設計，適配 2025 年 11 月 5 日後 Claude Code 將 Output Styles 遷移至 Plugin 架構的更新。
+**⚠️ 重要說明：** 本外掛專為 **Claude Code v2.0.30+** 設計，適配 2025 年 11 月 5 日後 Claude Code 將 Output Styles 遷移至 Plugin 架構的更新。
 
 ### ✨ 風格介紹
 
@@ -118,17 +118,17 @@
 /plugin marketplace add TaichiS/claude-tw-engineer-styles
 ```
 
-然後安裝插件：
+然後安裝外掛：
 
 ```
 /plugin install claude-tw-engineer-styles@claude-tw-engineer-styles
 ```
 
-**重啟 Claude Code** 使插件生效
+**重啟 Claude Code** 使外掛生效
 
 #### 方法二：手動安裝（開發者/本地測試）
 
-1. **下載插件：**
+1. **下載外掛：**
    ```bash
    git clone https://github.com/TaichiS/claude-tw-engineer-styles.git
    cd claude-tw-engineer-styles
@@ -140,13 +140,13 @@
    ln -s "$(pwd)" ~/.claude/plugins/claude-tw-engineer-styles
    ```
 
-3. **重啟 Claude Code** 使插件生效
+3. **重啟 Claude Code** 使外掛生效
 
 ### ⚙️ 使用方法
 
 #### ✨ 按需啟用風格（推薦）
 
-本插件採用 **按需加載設計**，只有在您需要時才注入風格描述，**不使用時完全不佔用 token**！
+本外掛採用 **按需加載設計**，只有在您需要時才注入風格描述，**不使用時完全不佔用 token**！
 
 在 Claude Code 對話中執行以下 slash command 啟用風格：
 
@@ -188,10 +188,10 @@
 
 ### 🛠️ 進階使用
 
-#### 驗證插件安裝
+#### 驗證外掛安裝
 
 ```bash
-# 檢查插件目錄
+# 檢查外掛目錄
 ls -la ~/.claude/plugins/claude-tw-engineer-styles
 
 # 應該看到以下結構：
@@ -202,7 +202,7 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
 # styles/
 ```
 
-#### 測試插件
+#### 測試外掛
 
 1. 啟動 Claude Code
 2. 執行 `/tw-style-list` 查看可用風格
@@ -230,7 +230,7 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
 
 #### Slash Command 無法使用
 
-1. **檢查插件目錄位置：**
+1. **檢查外掛目錄位置：**
    ```bash
    ls -la ~/.claude/plugins/claude-tw-engineer-styles/.claude-plugin/commands/
    ```
@@ -239,7 +239,7 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
 2. **檢查 Claude Code 版本：**
    確保使用 Claude Code v2.0.30 或更高版本
 
-3. **重新安裝插件：**
+3. **重新安裝外掛：**
    ```bash
    # 移除舊版本
    rm -rf ~/.claude/plugins/claude-tw-engineer-styles
@@ -279,7 +279,7 @@ claude-tw-engineer-styles/
 │   │   ├── tw-style-ojousama.md      # 傲嬌大小姐工程師風格命令
 │   │   ├── tw-style-list.md          # 列出所有風格
 │   │   └── tw-style-off.md           # 關閉風格
-│   ├── plugin.json                    # 插件元資料
+│   ├── plugin.json                    # 外掛元資料
 │   └── marketplace.json               # Marketplace 配置
 ├── hooks/
 │   └── hooks.json                     # Hook 配置（已清空）

@@ -18,7 +18,7 @@
 
    **Description（描述）:**
    ```
-   繁體中文工程師輸出風格插件 | Traditional Chinese Engineer Output Styles Plugin for Claude Code
+   繁體中文工程師輸出風格外掛 | Traditional Chinese Engineer Output Styles Plugin for Claude Code
    ```
 
    **Public/Private（公開/私有）:**
@@ -54,7 +54,7 @@ gh repo create claude-tw-engineer-styles \
   --public \
   --source=. \
   --remote=origin \
-  --description="繁體中文工程師輸出風格插件 | Traditional Chinese Engineer Output Styles Plugin for Claude Code" \
+  --description="繁體中文工程師輸出風格外掛 | Traditional Chinese Engineer Output Styles Plugin for Claude Code" \
   --push
 ```
 
@@ -69,7 +69,7 @@ gh auth login
 # 創建儲存庫
 gh repo create TaichiS/claude-tw-engineer-styles \
   --public \
-  --description="繁體中文工程師輸出風格插件 | Traditional Chinese Engineer Output Styles Plugin for Claude Code"
+  --description="繁體中文工程師輸出風格外掛 | Traditional Chinese Engineer Output Styles Plugin for Claude Code"
 
 # 推送程式碼
 cd /Users/lung/Programming/claude-tw-engineer-styles
