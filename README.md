@@ -270,8 +270,8 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
 
 #### 系統需求
 
-- **macOS**：內建支援，無需額外設定
-- **Linux**：需要安裝 `espeak` 或 `festival`
+- **macOS**：✅ 內建支援，使用系統內建的 `say` 指令，無需額外設定
+- **Linux**：✅ 需要安裝 `espeak` 或 `festival`
   ```bash
   # Ubuntu/Debian
   sudo apt-get install espeak
@@ -279,7 +279,10 @@ ls -la ~/.claude/plugins/claude-tw-engineer-styles
   # Fedora/RHEL
   sudo dnf install espeak
   ```
-- **Windows**：目前不支援
+- **Windows**：✅ 支援！使用 PowerShell 的 `System.Speech` 進行語音合成
+  - 需要 PowerShell 5.0+ 或 PowerShell Core (pwsh)
+  - 外掛會自動偵測系統並使用對應的語音合成方式
+  - 如果您的系統有安裝中文語音包，將自動使用中文語音
 
 #### 使用範例
 
@@ -352,13 +355,23 @@ claude-tw-engineer-styles/
 │   │   ├── tw-style-laowang.md       # 老王技術流風格命令
 │   │   ├── tw-style-nekomata.md      # 貓娘工程師風格命令
 │   │   ├── tw-style-ojousama.md      # 傲嬌大小姐工程師風格命令
+│   │   ├── tw-style-stephen-chow.md  # 周星馳無厘頭工程師風格命令
+│   │   ├── tw-style-sweet-girlfriend.md  # 甜蜜女友工程師風格命令
+│   │   ├── tw-style-night-market.md  # 台灣夜市老闆工程師風格命令
 │   │   ├── tw-style-list.md          # 列出所有風格
-│   │   └── tw-style-off.md           # 關閉風格
+│   │   ├── tw-style-off.md           # 關閉風格
+│   │   ├── notify-off.md             # 關閉語音通報
+│   │   ├── notify-simple.md          # 簡單語音通報
+│   │   ├── notify-full.md            # 完整語音通報
+│   │   ├── notify-status.md          # 查看通報狀態
+│   │   └── notify-done.md            # 手動觸發通報
 │   ├── plugin.json                    # 外掛元資料
 │   └── marketplace.json               # Marketplace 配置
 ├── hooks/
 │   └── hooks.json                     # Hook 配置（已清空）
 ├── hooks-handlers/
+│   ├── notify.sh                      # 語音通報處理腳本
+│   ├── say.ps1                        # Windows 版語音合成腳本
 │   └── session-start.sh               # 舊版處理器（已棄用）
 ├── styles/
 │   ├── engineer-professional.md       # 專業工程師風格定義

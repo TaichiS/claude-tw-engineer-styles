@@ -24,9 +24,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - 超熱情、很接地氣
   - 台灣國語 + 偶爾台語
   - 實在、講究俗擱大碗（CP 值超高）
-- 🔔 任務完成語音通報功能
+- 🔔 任務完成語音通報功能（跨平台支援）
   - 支援三種通報模式：關閉、簡單、完整
-  - 使用系統內建 `say` 指令進行語音通報
+  - 🖥️ **跨平台語音合成支援：**
+    - **macOS**：使用系統內建 `say` 指令
+    - **Linux**：支援 `espeak` 或 `festival`
+    - **Windows**：✨ 新增 PowerShell 腳本（`say.ps1`）使用 System.Speech
+  - 自動偵測作業系統並選擇對應的語音合成方式
   - 新增 5 個 slash commands：
     - `/notify-off` - 關閉通報
     - `/notify-simple` - 簡單通報（只說「好了」）
