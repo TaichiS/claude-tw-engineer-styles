@@ -20,5 +20,21 @@
     "slash-commands",
     "on-demand"
   ],
+  "commands": [
+    "./commands/tw-style-professional.md",
+    "./commands/tw-style-laowang.md",
+    "./commands/tw-style-nekomata.md",
+    "./commands/tw-style-ojousama.md",
+    "./commands/tw-style-stephen-chow.md",
+    "./commands/tw-style-sweet-girlfriend.md",
+    "./commands/tw-style-night-market.md",
+    "./commands/tw-style-list.md",
+    "./commands/tw-style-off.md",
+    "./commands/notify-off.md",
+    "./commands/notify-simple.md",
+    "./commands/notify-full.md",
+    "./commands/notify-status.md",
+    "./commands/notify-done.md"
+  ],
   "hooks": "./hooks/hooks.json"
 }
